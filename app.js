@@ -10,7 +10,7 @@ const app = express();
 app.use(cors());
 
 sequelize
-  .sync()
+  .authenticate()
   .then(() => {
     console.log('Database connection has been established successfully.');
   })
