@@ -20,5 +20,6 @@ sequelize
 
 app.use('/api/table', tableRoutes);
 
+const PORT = process.env.DB_NAME_PORT || 4000
 
-app.listen((4000), () => {console.log("app is running at port 4000")});
+app.listen((PORT), () => {console.log("app is running at port 4000")});
