@@ -1,4 +1,6 @@
-const { createClient } = require('redis');
+// const { createClient } = require('redis');
+const { createClient } = require('@redis/client');
+
 let redisClient;
 
 async function initializeRedisClient() {
